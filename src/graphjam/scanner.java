@@ -15,12 +15,13 @@ public class scanner {
 		try
 		{
 			Scanner fileScanner = new Scanner(enronText);
-			while (fileScanner.next().compareTo("0") != 0)
+			while (fileScanner.next().compareTo("FromNodeId") != 0)
 			{
 				fileScanner.next();
 			}
+			fileScanner.next();
 			
-			System.out.println(fileScanner.nextInt());
+			System.out.println(fileScanner.next());
 
 			fileScanner.close();
 		}
