@@ -12,6 +12,7 @@ public class scanner {
 
 		File enronText= new File("Email-Enron.txt");
 
+		//puts everything in a try catch to make it happy
 		try
 		{
 			Scanner fileScanner = new Scanner(enronText);
