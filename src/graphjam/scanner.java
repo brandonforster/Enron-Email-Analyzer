@@ -56,12 +56,18 @@ public class scanner {
 			ShortestPath.main(args);
 		}
 
+		//this will execute IsLoop.
+		else if (args[0].compareTo("isLoop") == 0)
+		{
+			IsLoop.main();
+		}
+
 		//this will execute connectedComponents.
 		else if (args[0].compareTo("connectedComponents") == 0)
 		{
 			ConnectedComponents.main();
 		}
-		
+
 		//this will execute mSquare.
 		else if (args[0].compareTo("mSquare") == 0)
 		{
