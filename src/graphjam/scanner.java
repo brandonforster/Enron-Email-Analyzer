@@ -1,3 +1,10 @@
+//Brandon Forster, Robert Millward,
+//William Corlett and Phillip Rajala
+//COP 3503 Assignment 3
+//Enron E-mail Graphing
+//11 November 2012
+//Scanner and Launcher
+
 package graphjam;
 
 import java.io.*;
@@ -46,19 +53,19 @@ public class scanner {
 		//appropriate class.
 		if (args[0].compareTo("shortestpath") == 0)
 		{
-			shortestPath.main(args[1], args[2]);
+			ShortestPath.main(args);
 		}
 
 		//this will execute connectedComponents.
 		else if (args[0].compareTo("connectedComponents") == 0)
 		{
-			connectedComponents.main();
+			ConnectedComponents.main();
 		}
 		
 		//this will execute mSquare.
 		else if (args[0].compareTo("mSquare") == 0)
 		{
-			mSquare.main();
+			MSquare.main();
 		}
 	}
 
