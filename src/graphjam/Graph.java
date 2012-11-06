@@ -10,14 +10,37 @@ package graphjam;
 import java.util.*;
 
 public class Graph {
-	private ArrayList<Node> nodes = new ArrayList<Node>();
+	//the lone field in the object
+	private ArrayList<Node> nodes;
 	
-	public void addNode(Node node){
-		nodes.add(node);
+	//constructor for predefined ArrayList
+	public Graph (ArrayList<Node> nodes)
+	{
+		 this.nodes = nodes;
 	}
 	
+	//constructor that constructs a new ArrayList and passes the reference
+	public Graph ()
+	{
+		ArrayList<Node> nodes = new ArrayList<Node>();
+		
+		this.nodes = nodes;		
+	}
+	
+	//setter for adding a node
+	public void addNode(Node node){
+		this.nodes.add(node);
+	}
+	
+	//getter for getting the reference to a node
+	public Node getNode(int index)
+	{
+		return this.nodes.get(index);
+	}
+	
+	//returns the size of the graph
 	public int size() {
-		return nodes.size();
+		return this.nodes.size();
 	}
 	
 	

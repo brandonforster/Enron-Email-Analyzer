@@ -12,6 +12,8 @@ import java.util.*;
 
 public class scanner {
 
+	public static Graph bigGraphOfJustice;
+
 	/**
 	 * @param args- the function that the shell script is calling
 	 */
@@ -35,8 +37,48 @@ public class scanner {
 			//last and manually eat the last token.
 			fileScanner.next();
 
-			//TODO remove debug code
-			System.out.println(fileScanner.next());
+			//run a constructor on a graph that isn't the graph of justice
+			Graph workingGraph = new Graph();
+
+			//initialize the current node to something it cannot be
+			int currentNodeID = Integer.MIN_VALUE;
+
+			while (fileScanner.hasNext() == true)
+			{
+				//read in the next node
+				int newNodeID = fileScanner.nextInt();
+
+				//since the nodes are ordered sequentially, if the nodeID
+				//we encounter does not exist already we know it is a new
+				//node that needs to be processed
+				if (currentNodeID != newNodeID)
+				{
+					//create the object
+					currentNodeID= newNodeID;
+					Node newNode= new Node(currentNodeID);
+					
+					//add the edge that is listed on this line
+					//also the name of my generation of Mustang
+					int newEdge = fileScanner.nextInt();
+					newNode.addEdge(newEdge);
+					
+					//add the new node to the graph
+					workingGraph.addNode(newNode);
+				}
+				//the node already exists
+				else
+				{
+					//get a reference to the current node
+					Node currentNode= workingGraph.getNode(currentNodeID);
+					
+					//add the edge that is listed on this line
+					//also the name of my generation of Mustang
+					int newEdge = fileScanner.nextInt();
+					currentNode.addEdge(newEdge);
+				}
+			}
+			//now that we've finished processing the graph, copy reference
+			bigGraphOfJustice = workingGraph;
 
 			//close the file
 			fileScanner.close();
