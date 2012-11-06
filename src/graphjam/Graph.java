@@ -5,6 +5,11 @@ public class Graph {
 		nodes.add(node);
 	}
 	
+	public Node getNode(int nodeID)
+	{
+		return nodes.get(nodeID);
+	}
+	
 	public int size() {
 		return nodes.size();
 	}

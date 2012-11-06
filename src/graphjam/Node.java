@@ -12,13 +12,11 @@ public class Node {
 		return id;
 	}
 	
-	public void addEdge(int edge)
-	{
+	public void addEdge(int edge){
 		edges.add(edge);
 	}
 	
-	public ArrayList<Integer> getEdges()
-	{
+	public ArrayList<Integer> getEdges(){
 		return edges;
 	}
 }
