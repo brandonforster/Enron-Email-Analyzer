@@ -23,7 +23,7 @@ public class ConnectedComponents {
 	//stores the state of all edges in the graph
 	static int[] state = new int[NUMBER_OF_NODES];
 
-	public static void main(String[] args) {
+	public static void main() {
 
 		int count = 0;
 
