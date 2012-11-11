@@ -1,7 +1,10 @@
 Brandon Forster, Robert Millward,
 William Corlett and Phillip Rajala
+
 COP 3503 Assignment 3
+
 Enron E-mail Graphing
+
 11 November 2012
 
 This is a program for analyzing graphs.
