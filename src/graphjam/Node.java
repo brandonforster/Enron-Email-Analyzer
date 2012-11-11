@@ -1,7 +1,3 @@
-package graphjam;
-
-public class Node {
-
 //Brandon Forster, Robert Millward,
 //William Corlett and Phillip Rajala
 //COP 3503 Assignment 3
@@ -44,5 +40,12 @@ public class Node {
 	public ArrayList<Integer> getEdges()
 	{
 		return this.edges;
+	}
+	
+	//checks to see if a node contains an edge to the node in the argument
+	public boolean containsEdge(Node edge)
+	{
+		int edgeIndex = edge.getId();
+		return this.edges.contains(edgeIndex);
 	}
 }
