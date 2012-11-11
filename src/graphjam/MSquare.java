@@ -11,18 +11,16 @@ import java.util.Arrays;
 
 public class MSquare {
 
+	//constant so there aren't any magic numbers in the code
 	private static final int MATRIX_SIZE = 100;
 	
-	/**
-	 * @param args
-	 */
 	public static void main() {
-		// TODO Auto-generated method stub
+		//declare our matricies three
+		int matrix1[][]= new int[MATRIX_SIZE][MATRIX_SIZE];
+		int matrix2[][]= new int[MATRIX_SIZE][MATRIX_SIZE];
+		int matrix3[][]= new int[MATRIX_SIZE][MATRIX_SIZE];
 		
-		int matrix1[MATRIX_SIZE][MATRIX_SIZE];
-		int matrix2[MATRIX_SIZE][MATRIX_SIZE];
-		int matrix3[MATRIX_SIZE][MATRIX_SIZE];
-		
+		//initialize all matricies to zeroes
 		Arrays.fill(matrix1, 0);
 		Arrays.fill(matrix2, 0);
 		Arrays.fill(matrix3, 0);

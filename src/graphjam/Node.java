@@ -1,7 +1,3 @@
-package graphjam;
-
-public class Node {
-
 //Brandon Forster, Robert Millward,
 //William Corlett and Phillip Rajala
 //COP 3503 Assignment 3
