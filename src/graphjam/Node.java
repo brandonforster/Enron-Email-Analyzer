@@ -41,4 +41,11 @@ public class Node {
 	{
 		return this.edges;
 	}
+	
+	//checks to see if a node contains an edge to the node in the argument
+	public boolean containsEdge(Node edge)
+	{
+		int edgeIndex = edge.getId();
+		return this.edges.contains(edgeIndex);
+	}
 }

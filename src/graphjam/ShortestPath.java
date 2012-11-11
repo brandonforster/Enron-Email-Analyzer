@@ -16,10 +16,16 @@ public class ShortestPath {
 		
 		//reads in the node numbers from the arguments passed
 		//to main by the scanner class
-		int sourceNode = Integer.parseInt(args[1]);
+		int sourceNodeIndex = 0;
+				//Integer.parseInt(args[1]);
 		
-		int destNode = Integer.parseInt(args[2]);
-
+		int destNodeIndex = 1;
+		//Integer.parseInt(args[2]);
+		
+		Node sourceNode = scanner.bigGraphOfJustice.getNode(sourceNodeIndex);
+		
+		Node destNode = scanner.bigGraphOfJustice.getNode(destNodeIndex);
+		
 	}
 
 }
