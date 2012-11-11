@@ -12,7 +12,7 @@ import java.util.*;
 public class ShortestPath {
 	
 	//constant so we don't have any magic numbers
-	private static final int NUMBER_OF_EDGES = 36692;
+	private static final int NUMBER_OF_NODES = 36692;
 	
 	//constants to define for our array
 	private static final int UNDISCOVERED = 0;
@@ -20,7 +20,7 @@ public class ShortestPath {
 	private static final int VISITED = 2;
 	
 	//stores the state of all edges in the graph
-	static int[] state = new int[NUMBER_OF_EDGES];
+	static int[] state = new int[NUMBER_OF_NODES];
 
 	public static void main(String[] args) {
 		
