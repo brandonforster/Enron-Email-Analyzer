@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Brandon Forster, Robert Millward,
+# William Corlett and Phillip Rajala
+# COP 3503 Assignment 3
+# Enron E-mail Graphing
+# 11 November 2012
+# The scripting file that compiles and runs the isloop command.
+
+javac scanner.java
+javac Graph.java
+javac Node.java
+javac isLoop.java
+java scanner isLoop
+
+# $1 and $2 in a shell script denote the first and second command line
+# parameters. The quotes around them tell the shell to preserve whitespace
+# (spaces and tabs and newlines) when passing the parameters to the
+# 'java isLoop' command

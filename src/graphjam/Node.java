@@ -14,24 +14,35 @@ package graphjam;
 import java.util.*;
 
 public class Node {
+	private ArrayList<Integer> edges;
 	private int id;
-	private ArrayList<Integer> edges = new ArrayList<Integer>();
 
+	//constructor for when we already have an ArrayList
+	public Node(ArrayList<Integer> edges, int id){
+		this.edges = edges;
+		this.id  = id;
+	}
+	
+	//constructor for when we need to make a new ArrayList
 	public Node(int id){
+		this.edges = new ArrayList<Integer>();
 		this.id  = id;
 	}
 
+	//getter for returning the ID field
 	public int getId(){
-		return id;
+		return this.id;
 	}
 	
+	//setter for adding an edge to the ArrayList field
 	public void addEdge(int edge)
 	{
-		edges.add(edge);
+		this.edges.add(edge);
 	}
 	
+	//getter for returning the ArrayList field
 	public ArrayList<Integer> getEdges()
 	{
-		return edges;
+		return this.edges;
 	}
 }
