@@ -25,6 +25,7 @@ public class MSquare {
 		Arrays.fill(matrix2, 0);
 		Arrays.fill(matrix3, 0);
 		
+		//if there is an edge from i to j, set value accordingly
 		for (int i = 0; i < MATRIX_SIZE; i++) {
 			for (int j = 0; j < MATRIX_SIZE; j++) {
 				if(scanner.bigGraphOfJustice.getNode(i).containsEdge(scanner.bigGraphOfJustice.getNode(j))){
@@ -34,6 +35,7 @@ public class MSquare {
 			}
 		}
 		
+		//calculate M^2
 		for(int i = 0; i < MATRIX_SIZE; i++) {
 			for(int j = 0; j < MATRIX_SIZE; j++) {
 				for(int k = 0; k < MATRIX_SIZE; k++) {
@@ -41,7 +43,8 @@ public class MSquare {
 				}
 			}  
 		}
-		   
+		
+		//print entry 100, 100 in M^2
 		System.out.println(matrix3[MATRIX_SIZE-1][MATRIX_SIZE-1]);
 		
 	}
