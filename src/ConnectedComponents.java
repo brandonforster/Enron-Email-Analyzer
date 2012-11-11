@@ -5,7 +5,7 @@
 //11 November 2012
 //Connected Components Functionality
 
-package graphjam;
+
 
 import java.util.*;
 

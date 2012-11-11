@@ -5,7 +5,7 @@
 //11 November 2012
 //M Squared Functionality
 
-package graphjam;
+
 
 public class MSquare {
 

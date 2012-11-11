@@ -5,7 +5,7 @@
 //11 November 2012
 //Node Object
 
-package graphjam;
+
 
 import java.util.*;
 

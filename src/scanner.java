@@ -5,7 +5,7 @@
 //11 November 2012
 //Scanner and Launcher
 
-package graphjam;
+
 
 import java.io.*;
 import java.util.*;
