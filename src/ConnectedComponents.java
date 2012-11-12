@@ -35,7 +35,7 @@ public class ConnectedComponents {
 			Node sourceNode = scanner.bigGraphOfJustice.getNode(i);
 
 			//if the node isn't visited, we want to run DFS on it
-			if(state[sourceNode.getId()] != VISITED){
+			if(state[sourceNode.getId()] == UNDISCOVERED){
 				//add to the number of connected components
 				count++;
 
