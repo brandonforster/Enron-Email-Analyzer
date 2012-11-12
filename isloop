@@ -7,7 +7,7 @@
 # 11 November 2012
 # The scripting file that compiles and runs the isloop command.
 
-javac node.java graph.java connectedcomponents.java scanner.java isloop.java msquare.java shortestpath.java
+javac node.java graph.java connectedComponents.java scanner.java isloop.java msquare.java shortestpath.java
 
 java scanner isLoop
 
