@@ -7,10 +7,7 @@
 # 11 November 2012
 # The scripting file that compiles and runs the connectedcomponents command.
 
-javac scanner.java
-javac Graph.java
-javac Node.java
-javac ConnectedComponents.java
+javac node.java graph.java connectedcomponents.java scanner.java isloop.java msquare.java shortestpath.java
 java scanner ConnectedComponents
 
 # $1 and $2 in a shell script denote the first and second command line
