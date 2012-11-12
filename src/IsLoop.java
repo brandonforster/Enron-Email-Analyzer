@@ -5,7 +5,7 @@
 //11 November 2012
 //Loop Finding Functionality
 
-package graphjam;
+
 
 import java.util.Arrays;
 import java.util.Stack;

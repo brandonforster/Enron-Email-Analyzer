@@ -5,7 +5,7 @@
 //11 November 2012
 //Shortest Path functionality
 
-package graphjam;
+
 
 import java.util.*;
 
